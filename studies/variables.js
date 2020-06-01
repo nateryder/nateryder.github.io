@@ -33,3 +33,20 @@ console.log(myName); // prints => bob
 var myVariable = 1;
 var myVariable = true;
 myVariable = "someString";
+
+// 4 var declares a variable and is globally scoped
+var name = "nate";
+
+// 5. let declares a variable that is blocked scoped 
+let lastName = "ryder";
+console.log(lastName);
+
+
+// 6.const behaves like var and let but cannot be reassigned and is blocked scoped 
+const fullName = "nate ryder";
+console.log(fullName);
+
+// 7. hoisting is when a variable is declared after it is used, let and const are not hoisted 
+x = 5;
+var x;
+console.log(x);
