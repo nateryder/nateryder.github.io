@@ -155,7 +155,7 @@ function nonFriends(name, array) {
     var result = [];//creating a empty to hold the names of non friends 
     var current = null;// creating a variable with null
     // looping throught the array of names 
-    for(let i = 0; i<array.length; i++){
+    for(let i = 0; i < array.length; i++){
         // checking to see if the name is already in the array of names 
         if(name === array[i].name){
             current = array[i];//if names is already in the array return null
@@ -163,17 +163,16 @@ function nonFriends(name, array) {
             people.push(array[i].name);//if names isnt in the array push that name to the array
         }
     
-
-    
     }
-
-    for(let i = 0; i<people.length; i++){
+//now looping through the people array
+    for(let i = 0; i < people.length; i++){
+        //checking to see if a person has no friend in the array
         if(current.friends.indexOf(people[i]) == -1){
-            result.push(people[i]);
+            result.push(people[i]); 
         }
     }
 
-    return result;
+    return result;//return the result array with people who are not friends with someone 
 }
 
 //////////////////////////////////////////////////////////////////////
